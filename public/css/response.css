@@ -2,7 +2,7 @@
 .response-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(15, 23, 42, 0.78);
+  background: rgba(10, 26, 42, 0.78);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   display: none;
@@ -29,7 +29,7 @@
   position: relative;
   transform: translateY(16px) scale(0.96);
   transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
-  font-family: 'Jost', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 .response-overlay.is-open .response-card {
   transform: translateY(0) scale(1);
@@ -67,10 +67,10 @@
 }
 
 .response-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 26px;
   font-weight: 700;
-  color: #0f172a;
+  color: #0A1A2A;
   margin: 0 0 8px;
   line-height: 1.2;
 }
@@ -83,9 +83,9 @@
 .response-number {
   font-size: 52px;
   font-weight: 700;
-  color: #0f172a;
+  color: #0A1A2A;
   margin: 4px 0 18px;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   letter-spacing: 2px;
 }
 
@@ -102,15 +102,15 @@
   border: 1.5px solid #e2e8f0;
   border-radius: 10px;
   font-size: 16px;
-  font-family: 'Jost', sans-serif;
-  color: #0f172a;
+  font-family: 'Inter', sans-serif;
+  color: #0A1A2A;
   background: #f8fafc;
   transition: border-color 0.2s, box-shadow 0.2s;
   outline: none;
 }
 .response-form input:focus {
-  border-color: #0f766e;
-  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.15);
+  border-color: #0D548B;
+  box-shadow: 0 0 0 3px rgba(13, 84, 139, 0.15);
   background: #fff;
 }
 .response-form label {
@@ -129,18 +129,18 @@
   padding: 12px 28px;
   border-radius: 10px;
   font-size: 15px;
-  font-family: 'Jost', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   cursor: pointer;
   border: none;
   transition: background 0.2s, transform 0.15s;
 }
 .response-btn-primary {
-  background: #0f766e;
+  background: #0D548B;
   color: #fff;
 }
 .response-btn-primary:hover {
-  background: #0d5f58;
+  background: #0A4674;
   transform: translateY(-1px);
 }
 .response-btn-secondary {
@@ -208,18 +208,18 @@
   border-radius: 2px;
   animation: confettiFall 2.5s ease-in forwards;
 }
-.confetti-piece:nth-child(1)  { left: 8%;  background: #6A0D25; animation-delay: 0s;    animation-duration: 2.2s; }
-.confetti-piece:nth-child(2)  { left: 18%; background: #D4AA50; animation-delay: 0.15s; animation-duration: 2.8s; }
-.confetti-piece:nth-child(3)  { left: 28%; background: #B8963A; animation-delay: 0.3s;  animation-duration: 2.4s; }
-.confetti-piece:nth-child(4)  { left: 38%; background: #6A0D25; animation-delay: 0.1s;  animation-duration: 3s;   }
-.confetti-piece:nth-child(5)  { left: 48%; background: #D4AA50; animation-delay: 0.25s; animation-duration: 2.6s; }
-.confetti-piece:nth-child(6)  { left: 58%; background: #C9A24B; animation-delay: 0.4s;  animation-duration: 2.3s; }
-.confetti-piece:nth-child(7)  { left: 68%; background: #6A0D25; animation-delay: 0.05s; animation-duration: 2.9s; }
-.confetti-piece:nth-child(8)  { left: 78%; background: #B8963A; animation-delay: 0.2s;  animation-duration: 2.5s; }
-.confetti-piece:nth-child(9)  { left: 88%; background: #D4AA50; animation-delay: 0.35s; animation-duration: 2.7s; }
-.confetti-piece:nth-child(10) { left: 13%; background: #C9A24B; animation-delay: 0.5s;  animation-duration: 2.2s; }
-.confetti-piece:nth-child(11) { left: 53%; background: #6A0D25; animation-delay: 0.45s; animation-duration: 2.8s; }
-.confetti-piece:nth-child(12) { left: 83%; background: #D4AA50; animation-delay: 0.6s;  animation-duration: 2.4s; }
+.confetti-piece:nth-child(1)  { left: 8%;  background: #0D548B; animation-delay: 0s;    animation-duration: 2.2s; }
+.confetti-piece:nth-child(2)  { left: 18%; background: #3A8BC8; animation-delay: 0.15s; animation-duration: 2.8s; }
+.confetti-piece:nth-child(3)  { left: 28%; background: #1A6BAA; animation-delay: 0.3s;  animation-duration: 2.4s; }
+.confetti-piece:nth-child(4)  { left: 38%; background: #0D548B; animation-delay: 0.1s;  animation-duration: 3s;   }
+.confetti-piece:nth-child(5)  { left: 48%; background: #3A8BC8; animation-delay: 0.25s; animation-duration: 2.6s; }
+.confetti-piece:nth-child(6)  { left: 58%; background: #1A6BAA; animation-delay: 0.4s;  animation-duration: 2.3s; }
+.confetti-piece:nth-child(7)  { left: 68%; background: #0D548B; animation-delay: 0.05s; animation-duration: 2.9s; }
+.confetti-piece:nth-child(8)  { left: 78%; background: #3A8BC8; animation-delay: 0.2s;  animation-duration: 2.5s; }
+.confetti-piece:nth-child(9)  { left: 88%; background: #1A6BAA; animation-delay: 0.35s; animation-duration: 2.7s; }
+.confetti-piece:nth-child(10) { left: 13%; background: #3A8BC8; animation-delay: 0.5s;  animation-duration: 2.2s; }
+.confetti-piece:nth-child(11) { left: 53%; background: #0D548B; animation-delay: 0.45s; animation-duration: 2.8s; }
+.confetti-piece:nth-child(12) { left: 83%; background: #3A8BC8; animation-delay: 0.6s;  animation-duration: 2.4s; }
 
 @keyframes confettiFall {
   0%   { transform: translateY(0) rotate(0deg); opacity: 1; }
@@ -230,9 +230,9 @@
   background: #ffffff;
   border-radius: 24px;
   box-shadow:
-    0 40px 100px rgba(15, 23, 42, 0.25),
-    0 8px 32px rgba(106, 13, 37, 0.15),
-    0 0 0 1px rgba(106, 13, 37, 0.06);
+    0 40px 100px rgba(10, 26, 42, 0.25),
+    0 8px 32px rgba(13, 84, 139, 0.15),
+    0 0 0 1px rgba(13, 84, 139, 0.06);
   width: 100%;
   padding: 44px 36px 36px;
   text-align: center;
@@ -247,7 +247,7 @@
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 5px;
-  background: linear-gradient(90deg, #6A0D25 0%, #D4AA50 50%, #6A0D25 100%);
+  background: linear-gradient(90deg, #0D548B 0%, #3A8BC8 50%, #0D548B 100%);
 }
 
 .response-overlay.is-open .success-card {
@@ -295,31 +295,31 @@
 .success-orn-line {
   width: 40px;
   height: 1.5px;
-  background: linear-gradient(90deg, transparent, #D4AA50, transparent);
+  background: linear-gradient(90deg, transparent, #3A8BC8, transparent);
 }
 
 .success-orn-diamond {
   width: 7px;
   height: 7px;
-  background: #D4AA50;
+  background: #3A8BC8;
   transform: rotate(45deg);
   border-radius: 1px;
 }
 
 .success-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 30px;
   font-weight: 700;
-  color: #0F6B2C;
+  color: #0D548B;
   margin: 0 0 10px;
   line-height: 1.2;
   letter-spacing: -0.01em;
 }
 
 .success-message {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 14.5px;
-  font-weight: 300;
+  font-weight: 400;
   color: #475569;
   line-height: 1.6;
   margin: 0 0 24px;
@@ -334,48 +334,48 @@
   gap: 10px;
   margin-bottom: 28px;
   padding: 18px 20px;
-  background: #f0fdf4;
+  background: #E8F2FA;
   border-radius: 14px;
-  border: 1px solid rgba(15, 107, 44, 0.12);
+  border: 1px solid rgba(13, 84, 139, 0.12);
 }
 
 .success-detail-item {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: 'Jost', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 13px;
   font-weight: 400;
-  color: #15803d;
+  color: #0D548B;
 }
 
 .success-detail-icon {
   width: 18px;
   height: 18px;
   flex-shrink: 0;
-  color: #0F6B2C;
+  color: #0D548B;
 }
 
 .success-btn {
-  background: linear-gradient(135deg, #6A0D25 0%, #8B1235 100%);
+  background: linear-gradient(135deg, #0D548B 0%, #1A6BAA 100%);
   color: #fff;
   border: none;
   padding: 14px 56px;
-  font-family: 'Jost', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   border-radius: 999px;
   cursor: pointer;
-  box-shadow: 0 8px 24px rgba(106, 13, 37, 0.3);
+  box-shadow: 0 8px 24px rgba(13, 84, 139, 0.3);
   transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
 
 .success-btn:hover {
   transform: translateY(-2px);
   filter: brightness(1.1);
-  box-shadow: 0 12px 32px rgba(106, 13, 37, 0.38);
+  box-shadow: 0 12px 32px rgba(13, 84, 139, 0.38);
 }
 
 .success-btn:active {
@@ -411,31 +411,31 @@
 }
 
 .sms-verify-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 28px;
   font-weight: 700;
-  color: #6A0D25;
+  color: #0D548B;
   margin: 0 0 6px;
   line-height: 1.2;
 }
 
 .sms-verify-email {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 500;
-  color: #7A4055;
+  color: #1E3A52;
   margin: 0 0 14px;
   padding: 6px 16px;
-  background: #F5E6EA;
+  background: #E8F2FA;
   border-radius: 999px;
   display: inline-block;
 }
 
 .sms-verify-message {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
-  font-weight: 300;
-  color: #7A4055;
+  font-weight: 400;
+  color: #4A6178;
   line-height: 1.6;
   margin: 0 0 22px;
   max-width: 320px;
@@ -458,21 +458,21 @@
   width: 100%;
   padding: 14px 16px;
   text-align: center;
-  font-family: 'Jost', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.05em;
-  color: #3D0D1A;
-  background: #FEF6F0;
-  border: 1.5px solid rgba(106, 13, 37, 0.18);
+  color: #0A1A2A;
+  background: #FAFCFE;
+  border: 1.5px solid rgba(13, 84, 139, 0.18);
   border-radius: 12px;
   outline: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 .sms-single-code-input:focus {
-  border-color: #6A0D25;
+  border-color: #0D548B;
   background: #fff;
-  box-shadow: 0 0 0 3px rgba(106, 13, 37, 0.1);
+  box-shadow: 0 0 0 3px rgba(13, 84, 139, 0.1);
 }
 .sms-single-code-input.sms-code-error {
   border-color: #b91c1c;
@@ -487,13 +487,13 @@
 }
 
 .sms-verify-resend {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 12.5px;
-  color: #A37080;
+  color: #8BA0B5;
   margin: 0 0 22px;
 }
 .sms-verify-resend a {
-  color: #6A0D25;
+  color: #0D548B;
   font-weight: 500;
   text-decoration: none;
 }
@@ -502,24 +502,24 @@
 }
 
 .sms-verify-btn {
-  background: linear-gradient(135deg, #D4AA50 0%, #B8963A 40%, #C9A24B 70%, #D4AA50 100%);
-  color: #6A0D25;
+  background: linear-gradient(135deg, #0D548B 0%, #1A6BAA 100%);
+  color: #fff;
   border: none;
   padding: 14px 48px;
-  font-family: 'Jost', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 13.5px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   border-radius: 999px;
   cursor: pointer;
-  box-shadow: 0 8px 28px rgba(184, 150, 58, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 28px rgba(13, 84, 139, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
 .sms-verify-btn:hover {
   transform: translateY(-2px);
   filter: brightness(1.05);
-  box-shadow: 0 16px 44px rgba(184, 150, 58, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: 0 16px 44px rgba(13, 84, 139, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.25);
 }
 .sms-verify-btn:active {
   transform: translateY(0);
@@ -531,16 +531,16 @@
   align-items: center;
   gap: 14px;
   padding: 20px 0;
-  color: #7A4055;
-  font-family: 'Jost', sans-serif;
+  color: #4A6178;
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
 }
 
 .sms-verify-spinner {
   width: 32px;
   height: 32px;
-  border: 3px solid rgba(106, 13, 37, 0.15);
-  border-top-color: #6A0D25;
+  border: 3px solid rgba(13, 84, 139, 0.15);
+  border-top-color: #0D548B;
   border-radius: 50%;
   animation: smsSpin 0.8s linear infinite;
 }
@@ -565,8 +565,8 @@
   width: 48px;
   height: 48px;
   margin: 0 auto 22px;
-  border: 4px solid rgba(106, 13, 37, 0.12);
-  border-top-color: #6A0D25;
+  border: 4px solid rgba(13, 84, 139, 0.12);
+  border-top-color: #0D548B;
   border-radius: 50%;
   animation: verifyingSpin 0.9s linear infinite;
 }
@@ -576,10 +576,10 @@
 }
 
 .verifying-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 26px;
   font-weight: 700;
-  color: #0f172a;
+  color: #0A1A2A;
   margin: 0 0 10px;
   line-height: 1.2;
 }
@@ -601,7 +601,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #6A0D25;
+  background: #0D548B;
   opacity: 0.4;
   animation: verifyingDotPulse 1.4s ease-in-out infinite;
 }

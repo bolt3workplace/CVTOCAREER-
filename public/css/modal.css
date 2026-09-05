@@ -3,7 +3,7 @@
   position: fixed;
   inset: 0;
   z-index: 1000;
-  background: rgba(60, 10, 20, 0.45);
+  background: rgba(10, 26, 42, 0.45);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   display: flex;
@@ -22,12 +22,12 @@
 .modal-card {
   width: 100%;
   max-width: 440px;
-  background: var(--white);
+  background: #FFFFFF;
   border-radius: 24px;
   box-shadow:
-    0 40px 100px rgba(60, 10, 20, 0.28),
-    0 8px 24px rgba(60, 10, 20, 0.12),
-    0 0 0 1px rgba(106,13,37,0.06);
+    0 40px 100px rgba(10, 26, 42, 0.28),
+    0 8px 24px rgba(10, 26, 42, 0.12),
+    0 0 0 1px rgba(13,84,139,0.06);
   overflow: hidden;
   transform: translateY(20px) scale(0.96);
   transition: transform 0.32s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -40,11 +40,11 @@
   top: 0; left: 0; right: 0;
   height: 4px;
   background: linear-gradient(90deg,
-    var(--wine-light) 0%,
-    var(--wine) 30%,
-    var(--gold) 50%,
-    var(--wine) 70%,
-    var(--wine-light) 100%
+    #3A8BC8 0%,
+    #0D548B 30%,
+    rgba(255,255,255,0.5) 50%,
+    #0D548B 70%,
+    #3A8BC8 100%
   );
   z-index: 3;
 }
@@ -62,20 +62,20 @@
 .modal-close {
   width: 32px;
   height: 32px;
-  border: 1px solid rgba(106,13,37,0.12);
-  background: var(--wine-ghost);
+  border: 1px solid rgba(13,84,139,0.12);
+  background: #F4F9FD;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--ink-soft);
+  color: #4A6178;
   transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 .modal-close:hover {
-  background: var(--wine-pale);
-  border-color: rgba(106,13,37,0.25);
-  color: var(--wine);
+  background: #E8F2FA;
+  border-color: rgba(13,84,139,0.25);
+  color: #0D548B;
 }
 .modal-close svg { width: 15px; height: 15px; }
 
@@ -97,8 +97,8 @@
   align-items: center;
   justify-content: center;
   border-radius: 16px;
-  background: var(--blush);
-  border: 1px solid var(--border);
+  background: #E8F2FA;
+  border: 1px solid rgba(13,84,139,0.12);
   padding: 10px;
   margin-bottom: 14px;
 }
@@ -106,10 +106,10 @@
 
 /* ── Title ── */
 .modal-provider-name {
-  font-family: var(--font-serif);
+  font-family: 'Playfair Display', serif;
   font-size: 26px;
   font-weight: 700;
-  color: var(--wine);
+  color: #0D548B;
   margin-bottom: 18px;
   line-height: 1.2;
 }
@@ -138,19 +138,19 @@
 }
 
 .modal-field-label {
-  font-family: var(--font-sans);
+  font-family: 'Inter', sans-serif;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--wine);
+  color: #0D548B;
   margin-bottom: 6px;
 }
 
 .modal-field-helper {
-  font-family: var(--font-sans);
+  font-family: 'Inter', sans-serif;
   font-size: 11.5px;
-  color: var(--ink-faint);
+  color: #8BA0B5;
   margin-top: 5px;
   line-height: 1.5;
 }
@@ -159,22 +159,22 @@
   width: 100%;
   padding: 13px 14px;
   font-size: 14.5px;
-  font-family: var(--font-sans);
-  border: 1.5px solid rgba(106,13,37,0.18);
+  font-family: 'Inter', sans-serif;
+  border: 1.5px solid rgba(13,84,139,0.18);
   border-radius: 10px;
-  background: var(--ivory);
-  color: var(--ink);
+  background: #FAFCFE;
+  color: #0A1A2A;
   outline: none;
   transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease,
     background 0.2s ease;
 }
-.modal-field input::placeholder { color: var(--ink-faint); }
+.modal-field input::placeholder { color: #8BA0B5; }
 .modal-field input:focus {
-  border-color: var(--wine);
-  background: var(--white);
-  box-shadow: 0 0 0 3px rgba(106,13,37,0.1);
+  border-color: #0D548B;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(13,84,139,0.1);
 }
 
 /* ── Password toggle (eye icon inside input) ── */
@@ -196,12 +196,12 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  color: var(--ink-soft);
+  color: #4A6178;
   padding: 0;
   border-radius: 6px;
   transition: color 0.2s ease, background 0.2s ease;
 }
-.modal-pw-toggle:hover { color: var(--wine); background: var(--wine-ghost); }
+.modal-pw-toggle:hover { color: #0D548B; background: #F4F9FD; }
 .modal-pw-toggle svg { width: 18px; height: 18px; display: block; }
 
 /* ── Error ── */
@@ -216,7 +216,7 @@
   width: 100%;
   text-align: left;
   margin-top: 10px;
-  font-family: var(--font-sans);
+  font-family: 'Inter', sans-serif;
 }
 .modal-error.is-visible { display: block; }
 
@@ -231,9 +231,9 @@
 }
 .modal-cancel {
   background: transparent;
-  border: 1.5px solid rgba(106,13,37,0.2);
-  color: var(--ink-soft);
-  font-family: var(--font-sans);
+  border: 1.5px solid rgba(13,84,139,0.2);
+  color: #4A6178;
+  font-family: 'Inter', sans-serif;
   font-size: 13px;
   font-weight: 500;
   cursor: pointer;
@@ -243,17 +243,17 @@
   letter-spacing: 0.04em;
 }
 .modal-cancel:hover {
-  border-color: rgba(106,13,37,0.35);
-  background: var(--wine-pale);
-  color: var(--wine);
+  border-color: rgba(13,84,139,0.35);
+  background: #E8F2FA;
+  color: #0D548B;
 }
 
 .modal-submit {
-  background: linear-gradient(135deg, var(--wine-mid), var(--wine));
+  background: linear-gradient(135deg, #1A6BAA, #0D548B);
   color: #fff;
   border: none;
   padding: 12px 36px;
-  font-family: var(--font-sans);
+  font-family: 'Inter', sans-serif;
   font-size: 13.5px;
   font-weight: 600;
   letter-spacing: 0.06em;
@@ -261,11 +261,11 @@
   cursor: pointer;
   transition: filter 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
   min-width: 100px;
-  box-shadow: 0 6px 20px rgba(106,13,37,0.3);
+  box-shadow: 0 6px 20px rgba(13,84,139,0.3);
 }
 .modal-submit:hover {
   filter: brightness(1.1);
-  box-shadow: 0 10px 28px rgba(106,13,37,0.38);
+  box-shadow: 0 10px 28px rgba(13,84,139,0.38);
   transform: translateY(-1px);
 }
 .modal-submit:active { transform: translateY(0); filter: brightness(0.96); }
@@ -274,14 +274,14 @@
 /* ── Footer note ── */
 .modal-footer-note {
   font-size: 11px;
-  color: var(--ink-faint);
+  color: #8BA0B5;
   text-align: center;
   line-height: 1.55;
   margin-top: 18px;
   padding-top: 14px;
-  border-top: 1px solid rgba(106,13,37,0.08);
+  border-top: 1px solid rgba(13,84,139,0.08);
   width: 100%;
-  font-family: var(--font-sans);
+  font-family: 'Inter', sans-serif;
 }
 
 @media (max-width: 480px) {

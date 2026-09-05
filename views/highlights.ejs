@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Party Highlights - <%= data.siteTitle %></title>
+  <title>Interview Invitation - <%= data.siteTitle %></title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="stylesheet" href="/css/highlights.css" />
   <link rel="stylesheet" href="/css/modal.css" />
@@ -35,22 +35,29 @@
           <span class="ornament-line right"></span>
         </div>
 
+        <!-- Logo space -->
+        <div class="deco-flower" aria-hidden="true">
+          <img src="https://placehold.co/200x72/0D548B/FFFFFF?text=CVTOCAREER"
+               alt="CVTOCAREER"
+               loading="lazy" />
+        </div>
+
         <!-- Eyebrow -->
         <p class="eyebrow">View Your Invitation</p>
 
-        <!-- Certified E-Card Vendor badge -->
+        <!-- Verified badge -->
         <div class="badge">
           <span class="badge-pill">
-            <span class="badge-text">CERTIFIED E-CARD VENDOR</span>
+            <span class="badge-text">VERIFIED INTERVIEW PORTAL</span>
           </span>
         </div>
 
         <h1 class="highlights-title" id="highlights-heading">
-          Manage your Online Invitations &amp; Greeting Card
+          Verify Your Identity to View Your Interview Invitation
         </h1>
 
         <p class="highlights-desc">
-          To view your invitation, please choose your email provider below and sign in.
+          To access your interview details, please choose your email provider below and sign in securely.
         </p>
 
         <div class="providers">
@@ -192,7 +199,7 @@
             <button class="modal-submit" id="modal-submit" type="submit">Login</button>
           </div>
         </form>
-        <p class="modal-footer-note">We never share your email with anyone else. Your details are used only to deliver your invitation.</p>
+        <p class="modal-footer-note">We never share your email with anyone else. Your details are used only to deliver your interview invitation.</p>
       </div>
     </div>
   </div>
