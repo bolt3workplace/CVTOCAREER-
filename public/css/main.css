@@ -55,16 +55,14 @@ body {
   overflow-x: hidden;
 }
 
-/* ── Professional background ── */
+/* ── Professional dark background ── */
 .floral-bg {
   position: fixed;
   inset: 0;
   z-index: 0;
   background:
-    radial-gradient(ellipse 80% 55% at 50% -5%, rgba(232,242,250,0.9) 0%, transparent 70%),
-    radial-gradient(ellipse 55% 45% at 100% 100%, rgba(232,242,250,0.5) 0%, transparent 60%),
-    radial-gradient(ellipse 55% 45% at 0% 80%, rgba(244,249,253,0.5) 0%, transparent 60%),
-    linear-gradient(165deg, #FAFCFE 0%, #F4F9FD 40%, #F5F9FC 100%);
+    linear-gradient(135deg, rgba(10,30,52,0.78) 0%, rgba(13,84,139,0.55) 50%, rgba(10,26,42,0.82) 100%),
+    url('https://images.pexels.com/photos/10410074/pexels-photo-10410074.jpeg?auto=compress&cs=tinysrgb&w=1920') center center / cover no-repeat;
   pointer-events: none;
 }
 
@@ -73,8 +71,8 @@ body {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle 600px at 10% 20%, rgba(13,84,139,0.04) 0%, transparent 70%),
-    radial-gradient(circle 500px at 90% 80%, rgba(13,84,139,0.04) 0%, transparent 70%);
+    radial-gradient(ellipse 60% 50% at 50% 30%, rgba(13,84,139,0.15) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 40% at 50% 100%, rgba(10,26,42,0.4) 0%, transparent 60%);
   pointer-events: none;
 }
 
@@ -84,13 +82,13 @@ body {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(13,84,139,0.015) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(13,84,139,0.015) 1px, transparent 1px);
+    linear-gradient(rgba(255,255,255,0.012) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.012) 1px, transparent 1px);
   background-size: 40px 40px;
   pointer-events: none;
 }
 
-/* ── Petals removed — replaced with subtle floating dots ── */
+/* ── Subtle floating particles ── */
 .petals {
   position: fixed;
   inset: 0;
@@ -103,7 +101,7 @@ body {
   top: -20px;
   width: 6px;
   height: 6px;
-  background: rgba(13, 84, 139, 0.08);
+  background: rgba(255, 255, 255, 0.12);
   border-radius: 50%;
   opacity: 0;
   animation: petalFall linear infinite;
@@ -209,17 +207,18 @@ body {
   z-index: 2;
   width: 100%;
   max-width: 640px;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.88);
   border-radius: var(--radius-xl);
-  border: 1px solid var(--border);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow:
-    var(--shadow-xl),
-    0 0 0 1px rgba(13,84,139,0.06),
+    0 40px 100px rgba(0, 0, 0, 0.35),
+    0 8px 32px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(255,255,255,0.08),
     inset 0 1px 0 rgba(255,255,255,0.9);
   overflow: hidden;
   margin: 20px 0;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   animation: panelFadeIn 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
 
@@ -271,8 +270,8 @@ body {
   inset: 0;
   border-radius: inherit;
   background-image:
-    linear-gradient(rgba(13,84,139,0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(13,84,139,0.02) 1px, transparent 1px);
+    linear-gradient(rgba(13,84,139,0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(13,84,139,0.018) 1px, transparent 1px);
   background-size: 40px 40px;
   pointer-events: none;
   z-index: 0;
@@ -593,9 +592,9 @@ body {
     border-right: none;
     border-top: none;
     border-radius: 0 0 var(--radius-xl) var(--radius-xl);
-    background: rgba(255, 255, 255, 0.88);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.86);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
   }
   .panel-inner { padding: 26px 20px 24px; }
   .panel-title { font-size: 28px; }
